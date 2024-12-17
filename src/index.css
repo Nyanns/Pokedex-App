@@ -1,0 +1,86 @@
+/* Resetting margin, padding, and box-sizing across all elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting a consistent font family and line height */
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Resetting default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove focus outline (for better custom focus styles) */
+a:focus {
+  outline: none;
+}
+
+/* Removing default list and form input styles */
+ol,
+ul {
+  list-style: none;
+}
+
+button,
+input,
+textarea {
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* Resetting table styles */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Ensuring that the images are responsive and inline */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Set consistent styles for the HTML document */
+html {
+  font-size: 100%; /* 16px by default */
+  line-height: 1.15; /* Slightly increased line height for better readability */
+  color-scheme: light dark;
+  background-color: #242424;
+}
+
+body {
+  background-color: inherit;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* Set media query for light theme */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
